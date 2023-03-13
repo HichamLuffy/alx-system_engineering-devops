@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -empty | cut -d ' ' -f9
+find . -empty | cut -d "/" - f9

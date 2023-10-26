@@ -14,6 +14,7 @@ do
             ;;
         17)
             echo "bad luck from Japan"
+            ;;
     esac
     ((i++))
 done

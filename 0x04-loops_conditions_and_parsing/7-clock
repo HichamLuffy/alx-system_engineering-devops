@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+#print 12h and 59min
+
 hr=0
 while [ $hr -le 12 ]
 do

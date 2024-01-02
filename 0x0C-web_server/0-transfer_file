@@ -10,11 +10,9 @@ server_ip="$2"
 username="$3"
 ssh_Private_key="$4"
 
-scp -o StrictHostKeyChecking=no -i "$ssh_Private_key" "$file_path" "$username@$server_ip":~/
 
-if [ $? -eq 0 ]; then
-    echo "File transfered successfully"
+if [ $# -eq 3 ]; then
+    scp -o StrictHostKeyChecking=no "$file_path" "$username@$server_ip":~/
 else
-    echo "File transfer failed"
-fi
+    scp -o StrictHostKeyChecking=no -i "$ssh_Private_key" "$file_path" "$username@$server_ip":~/
 fi

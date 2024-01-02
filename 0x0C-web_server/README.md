@@ -6,23 +6,29 @@
 
 ### Task 1: Install nginx web server
 
-### Task 2: Client configuration file
+### Task 2: Setup a domain name
 
-### Task 3: 3. Let me in!
+### Task 3: Redirection
 
-### task 4(advenced): Client configuration file (w/ Puppet)
+### task 4: Not found page 404
+
+### task 5(#advanced): Install Nginx web server (w/ Puppet)
+
+
 
 
 # 📁 Directory Structure
 
-- 📂 **0x0B.SSH/**
+- 📂 **0x0C-web_server/**
   - ├── 📂 **task-0/**
-    - └─🗝️  [0-use_a_private_key]
+    - └─🗝️  [0-transfer_file]
   - ├── 📂 **task-1/**
-    - └─🔑 [1-create_ssh_key_pair]
+    - └─🔑 [1-install_nginx_web_server]
   - ├── 📂 **task-2/**
-    - └─✨ [2-ssh_config]
+    - └─✨ [2-setup_a_domain_name]
   - ├── 📂 **task-3/**
-    - └─ [files]
-  - ├── 📂 **task-4 (advanced)/**
-    - └─🎭 [100-puppet_ssh_config.pp]
+    - └─ [3-redirection]
+  - ├── 📂 **task-4/**
+    - └─🎭 [4-not_found_page_404]
+  - ├── 📂 **task-5 (advanced)/**
+    - └─🎭 [7-puppet_install_nginx_web_server.pp]

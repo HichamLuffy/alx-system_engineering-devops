@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Transfer a file to your server
+# Transfer a file to your servers
+
 if [ "$#" -lt 3 ]; then
     echo "Usage: $0 PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
     exit 1
@@ -14,4 +15,5 @@ if [ $# -eq 3 ]; then
     scp -o StrictHostKeyChecking=no "$file_path" "$username@$server_ip":~/
 else
     scp -o StrictHostKeyChecking=no -i "$ssh_Private_key" "$file_path" "$username@$server_ip":~/
+fi
 fi

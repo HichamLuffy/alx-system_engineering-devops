@@ -17,3 +17,7 @@
     - └─🔑 [[1-install_load_balancer](https://github.com/HichamLuffy/alx-system_engineering-devops/blob/master/0x0F-load_balancer/1-install_load_balancer)]
   - ├── 📂 **task-2/**
     - └─📧 [[2-puppet_custom_http_response_header.pp](https://github.com/HichamLuffy/alx-system_engineering-devops/blob/master/0x0F-load_balancer/2-puppet_custom_http_response_header.pp)]
+
+
+    ![Load Balancer GIF](https://media.giphy.com/media/52qtwCtj9OLTi/giphy.gif)
+

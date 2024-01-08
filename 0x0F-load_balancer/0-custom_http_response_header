@@ -8,3 +8,4 @@ sudo sed -i '/^}$/i \ \n\tlocation @404 {return 404 "Ceci n'\''est pas une page\
 sudo sed -i 's/=404/@404/g' $config
 sudo sed -i "0,/location \/ {/s/location \/ {/&\n\t\tadd_header X-Served-By '$HOSTNAME';/" $config
 sudo service nginx restart
+:

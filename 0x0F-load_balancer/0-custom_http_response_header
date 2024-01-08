@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# install  nginx and config it
+# install nginx and config it
 sudo apt-get -y update
 sudo apt-get -y install nginx
 config="/etc/nginx/sites-available/default"

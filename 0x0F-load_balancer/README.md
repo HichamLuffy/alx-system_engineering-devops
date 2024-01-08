@@ -10,8 +10,10 @@
 
 # 📁 Directory Structure
 
-| Task     | File                                      |
-|----------|-------------------------------------------|
-| task-0   | 🔐 [0-custom_http_response_header]         |
-| task-1   | 🔑 [1-install_load_balancer]               |
-| task-2   | 📧 [2-puppet_custom_http_response_header.pp]|
+- 📂 **0x11. Python - Network #1/**
+  - ├── 📂 **task-0/**
+    - └─🔐 [0-custom_http_response_header]
+  - ├── 📂 **task-1/**
+    - └─🔑 [1-install_load_balancer]
+  - ├── 📂 **task-2/**
+    - └─📧 [2-puppet_custom_http_response_header.pp]

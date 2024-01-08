@@ -12,8 +12,8 @@
 
 - 📂 **0x11. Python - Network #1/**
   - ├── 📂 **task-0/**
-    - └─🔐 [[0-custom_http_response_header](/0x11.%20Python%20-%20Network%20%231/task-0/0-custom_http_response_header)]
+    - └─🔐 [[0-custom_http_response_header](https://github.com/HichamLuffy/alx-system_engineering-devops/blob/master/0x0F-load_balancer/0-custom_http_response_header)]
   - ├── 📂 **task-1/**
-    - └─🔑 [[1-install_load_balancer](/0x11.%20Python%20-%20Network%20%231/task-1/1-install_load_balancer)]
+    - └─🔑 [[1-install_load_balancer](https://github.com/HichamLuffy/alx-system_engineering-devops/blob/master/0x0F-load_balancer/1-install_load_balancer)]
   - ├── 📂 **task-2/**
-    - └─📧 [2-puppet_custom_http_response_header.pp](/0x11.%20Python%20-%20Network%20%231/task-2/2-puppet_custom_http_response_header.pp)
+    - └─📧 [[2-puppet_custom_http_response_header.pp](https://github.com/HichamLuffy/alx-system_engineering-devops/blob/master/0x0F-load_balancer/2-puppet_custom_http_response_header.pp)]

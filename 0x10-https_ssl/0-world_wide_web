@@ -11,15 +11,7 @@ if [ "$#" -eq 1 ]; then
         fi
     done
 elif [ "$#" -eq 2 ]; then
-    domain=$1
     subdomain=$2
-    result=$(dig $subdomain.$domain +short)
-    if [ -n "$result" ]; then
-        echo "The subdomain $subdomain is an A record and points to $result"
-    else
-        echo "The subdomain $subdomain does not exist for $domain"
-    fi
-else
-    echo "Usage: $0 domain [subdomain]"
-    exit 1
+    echo "$(dig $subdomain.$1 | awk '/ANSWER SECTION:/ {getline; print "The subdomain '"$subdomain"' is a "$4" record and points to "$5}')"
 fi
+

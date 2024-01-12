@@ -12,11 +12,11 @@
 
 - 📂 **0x10. HTTPS SSL/**
   - ├── 📂 **task-0/**
-    - └─🔐 [[0-world_wide_web](https://github.com/HichamLuffy/alx-system_engineering-devops/blob/master/0x0F-load_balancer/0-custom_http_response_header)]
+    - └─🔐 [[0-world_wide_web](https://github.com/HichamLuffy/alx-system_engineering-devops/blob/master/0x10-https_ssl/0-world_wide_web)]
   - ├── 📂 **task-1/**
-    - └─🔑 [[1-haproxy_ssl_termination](https://github.com/HichamLuffy/alx-system_engineering-devops/blob/master/0x0F-load_balancer/1-install_load_balancer)]
+    - └─🔑 [[1-haproxy_ssl_termination](https://github.com/HichamLuffy/alx-system_engineering-devops/blob/master/0x10-https_ssl/1-haproxy_ssl_termination)]
   - ├── 📂 **task-2/**
-    - └─📧 [[100-redirect_http_to_https](https://github.com/HichamLuffy/alx-system_engineering-devops/blob/master/0x0F-load_balancer/2-puppet_custom_http_response_header.pp)]
+    - └─📧 [[100-redirect_http_to_https](https://github.com/HichamLuffy/alx-system_engineering-devops/blob/master/0x10-https_ssl/100-redirect_http_to_https)]
 
 
     ![Load Balancer GIF](https://media.giphy.com/media/52qtwCtj9OLTi/giphy.gif)

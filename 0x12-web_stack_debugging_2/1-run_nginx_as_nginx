@@ -1,1 +1,18 @@
 #!/usr/bin/env bash
+# Run nginx as nginx
+
+if service nginx status > /dev/null; then
+    sudo service nginx restart
+else
+    echo "Nginx is not running."
+fi
+
+# Update Nginx configuration to run as the nginx user
+echo "user nginx;" >> /etc/nginx/nginx.conf
+
+chmod 644 /etc/nginx/nginx.conf
+
+# Update default site configuration to listen on port 8080
+sed -i 's/80/8080/g' /etc/nginx/sites-available/default
+
+sudo service nginx restart

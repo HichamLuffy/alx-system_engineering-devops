@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Check if Nginx is running
+# Check if Nginx is runnin as nginx user
 
 if service nginx status > /dev/null; then
     sudo service nginx restart

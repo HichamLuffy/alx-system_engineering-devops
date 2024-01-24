@@ -1,16 +1,7 @@
 #!/usr/bin/env bash
-# Check if Nginx is runnin as nginx user
-
-if service nginx status > /dev/null; then
-    sudo service nginx restart
-else
-    echo "Nginx is not running."
-fi
-
-echo "user nginx;" >> /etc/nginx/nginx.conf
-
+# 7 lines or less
+sed -i 's/user www-data/user nginx/' /etc/nginx/nginx.conf
 chmod 644 /etc/nginx/nginx.conf
-
 sed -i 's/80/8080/g' /etc/nginx/sites-available/default
 pkill apache2
-sudo service nginx restart
+sudo -u nginx service nginx restart

@@ -8,13 +8,23 @@ import sys
 
 if __name__ == "__main__":
     """ Gather data from an API """
-    id_user = sys.argv[1]
-    url = f'https://jsonplaceholder.typicode.com/'
-    user = requests.get(url + "users/{}".format(id_user)).json()
-    todo = requests.get(url + "todos?userId={}".format(id_user)).json()
+    try:
+        id_user = sys.argv[1]
+        url = f'https://jsonplaceholder.typicode.com/'
+        user_response = requests.get(url + f'users/{id_user}')
+        user = user_response.json()
+        todo_response = requests.get(url + f'todos?userId={id_user}')
+        todo = todo_response.json()
 
-    completed = [task.get("title") for task in todo if task.get("completed")]
-    print("Employee {} is done with tasks({}/{}):".format(
-        user.get("name"), len(completed), len(todo)))
-    for task in completed:
-        print(f"\t{task}")
+        completed_tasks = [task['title'] for task in todo if task['completed']]
+        print(
+            f"Employee {user['name']} is done with tasks({len(completed_tasks)}/{len(todo)}):")
+        for task in completed_tasks:
+            print(f"\t{task}")
+
+    except IndexError:
+        print("Error: Please provide an employee ID as a command line argument.")
+    except ValueError:
+        print("Error: Employee ID should be an integer.")
+    except requests.exceptions.RequestException as e:
+        print(f"Error: {e}")

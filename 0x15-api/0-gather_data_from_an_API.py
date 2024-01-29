@@ -5,6 +5,7 @@
 import requests
 import sys
 
+
 if __name__ == "__main__":
     """ Gather data from an API """
     id_user = sys.argv[1]

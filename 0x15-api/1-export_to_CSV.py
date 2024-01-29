@@ -21,7 +21,7 @@ if __name__ == "__main__":
     todosdone = requests.get(f'{url}{done}').json()
     todos_completed = len(todosdone)
     totaldone = len(todo)
-    
+
     csv_file = f'{id_user}.csv'
     with open(csv_file, 'w') as f:
        for task in todo:

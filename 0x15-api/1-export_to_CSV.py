@@ -22,7 +22,8 @@ if __name__ == "__main__":
     todos_completed = len(todosdone)
     totaldone = len(todo)
     
+    user_name = f'{Name}.csv'
     csv_file = f'{id_user}.csv'
     with open(csv_file, 'w') as f:
        for task in todo:
-           f.write('"{}, {}, {}, {}\n"'.format(id_user, Name, task.get("completed"), task.get("title")))
+           f.write('"{}, {}, {}, {}\n"'.format(id_user, user_name, task.get("completed"), task.get("title")))

@@ -23,7 +23,7 @@ if __name__ == "__main__":
     totaldone = len(todo)
     userName = user[0].get("username")
 
-    with open(f'{id}.csv', 'w') as f:
+    with open(f'{id_user}.csv', 'w') as f:
         for todo in todo:
             data = f'"{id}","{userName}","{todo.get("completed")}",'
             data2 = f'"{todo.get("title")}"\n'

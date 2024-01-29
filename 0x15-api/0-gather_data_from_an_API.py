@@ -15,9 +15,7 @@ if __name__ == "__main__":
     todo_response = requests.get(url + f'todos?userId={id_user}')
     todo = todo_response.json()
 
-    completed_tasks = [task['title'] for task in todo if task['completed']]
-    print(
-        f"Employee {user['name']} is done\
-          with tasks({len(completed_tasks)}/{len(todo)}):")
-    for task in completed_tasks:
-        print(f"\t{task}")
+    print('Employee {} is done with tasks({}/{}):'.format(
+        user.get('name'), len(todo), len(todo_response.json())))
+    for task in todo:
+        print('\t {}'.format(task.get('title')))

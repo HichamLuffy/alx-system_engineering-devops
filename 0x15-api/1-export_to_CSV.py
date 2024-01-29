@@ -25,6 +25,6 @@ if __name__ == "__main__":
 
     with open(f'{id_user}.csv', 'w') as f:
         for todo in todo:
-            data = f'"{id}","{userName}","{todo.get("completed")}",'
+            data = f'"{id_user}","{userName}","{todo.get("completed")}",'
             data2 = f'"{todo.get("title")}"\n'
             f.write(data+data2)

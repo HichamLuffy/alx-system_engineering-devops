@@ -21,10 +21,10 @@ if __name__ == "__main__":
     todosdone = requests.get(f'{url}{done}').json()
     todos_completed = len(todosdone)
     totaldone = len(todo)
+    userName = user[0].get("username")
 
-    csv_file = f'{id_user}.csv'
-    with open(csv_file, 'w') as f:
-       for task in todo:
-           status = task.get("completed")
-           if task.get("completed") is True:
-               f.write("{}, {}, {}, {}\n".format(id_user, Name, status, task.get("title")))
+    with open(f'{id}.csv', 'w') as f:
+        for todo in todo:
+            data = f'"{id}","{userName}","{todo.get("completed")}",'
+            data2 = f'"{todo.get("title")}"\n'
+            f.write(data+data2)

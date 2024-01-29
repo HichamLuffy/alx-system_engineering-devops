@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""gather data from an API"""
+# gather data from an API
 
 
 import requests
@@ -14,8 +14,9 @@ if __name__ == "__main__":
     user = user_response.json()
     todo_response = requests.get(url + f'todos?userId={id_user}')
     todo = todo_response.json()
-
-    print('Employee {} is done with tasks({}/{}):'.format(
-        user.get('name'), len(todo), len(todo_response.json())))
-    for task in todo:
-        print('\t {}'.format(task.get('title')))
+    
+    completed = [task.get("title") for task in todo if task.get("completed")]
+    print("Employee {} is done with tasks({}/{}):".format(
+        user.get("name"), len(completed), len(todo)))
+    for task in completed:
+        print(f"\t{task}")

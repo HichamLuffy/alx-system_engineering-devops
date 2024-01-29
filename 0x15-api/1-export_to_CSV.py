@@ -7,7 +7,7 @@ import sys
 
 
 if __name__ == "__main__":
-    """ Gather data from an API"""
+    """Gather data from an API"""
     id_user = sys.argv[1]
     url = f'https://jsonplaceholder.typicode.com/'
     userid = f'users?id={id_user}'

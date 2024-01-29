@@ -7,7 +7,7 @@ import sys
 
 
 if __name__ == "__main__":
-    """Gather data from an API"""
+    """ Gather data from an API"""
     id_user = sys.argv[1]
     url = f'https://jsonplaceholder.typicode.com/'
     userid = f'users?id={id_user}'
@@ -25,5 +25,6 @@ if __name__ == "__main__":
     csv_file = f'{id_user}.csv'
     with open(csv_file, 'w') as f:
        for task in todo:
+           status = task.get("completed")
            if task.get("completed") is True:
-               f.write("{}, {}, {}\n".format(id_user, Name, task.get("title")))
+               f.write("{}, {}, {}, {}\n".format(id_user, Name, status, task.get("title")))

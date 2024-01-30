@@ -24,7 +24,6 @@ if __name__ == "__main__":
     todos_completed = len(todosdone)
     totaldone = len(todo)
 
-
     tasks = []
     for todo_item in todo:
         task_info = {

@@ -1,10 +1,5 @@
 #!/usr/bin/python3
-"""
-0 subs
-"""
-
-
-
+"""0 subs"""
 import requests
 
 

@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""0 subs"""
+"""
+2-main
+"""
 import requests
 
 

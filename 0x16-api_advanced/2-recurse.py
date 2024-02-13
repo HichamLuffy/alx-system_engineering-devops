@@ -5,9 +5,14 @@ this doc for module
 import requests
 
 
+headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)\
+        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0\
+        Safari/537.36'}
+
+
 def recurse(subreddit, after=None):
     """method doc"""
-    headers = {"User-Agent": "MyCustomUserAgent/1.0"}
     params = {"after": after}
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
     response = requests.get(url, allow_redirects=False,
